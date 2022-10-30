@@ -1,2 +1,5 @@
 .idea
+.git
+.ipynb_checkpoints
+dataset
 venv
