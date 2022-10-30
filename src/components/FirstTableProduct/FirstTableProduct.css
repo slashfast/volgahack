@@ -1,0 +1,28 @@
+.tableproduct {
+	border: none;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+}
+.tableproduct thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+}
+
+
+.company-name, .company-product {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-content {
+    margin: 0 auto;
+    line-height: 1.625;
+	padding: 5px;
+  }

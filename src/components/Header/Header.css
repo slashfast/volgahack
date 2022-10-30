@@ -1,0 +1,123 @@
+.hero-nav {
+  width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+    min-height: 105px;
+    background-color: #0f2058;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  .hero-nav .hero-nav__inner {
+    z-index: 1;
+  }
+  
+  
+  :root {
+    --rad: .5rem;
+    --dur: .3s;
+    --color-dark: #0f2058;
+    --color-light: #fff;
+    --color-brand: #ffffff;
+    --font-fam: "Lato", sans-serif;
+    --height: 5rem;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  }
+  
+  form {
+    position: relative;
+    width: 30rem;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+  }
+  
+  input, button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1.8rem;
+  }
+  
+  input[type=search] {
+    outline: 0;
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+  
+  input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+  
+  button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+  }
+  
+  input:not(:-moz-placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+  }
+  
+  input:not(:-ms-input-placeholder) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+  }
+  
+  input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+  }
+  input:not(:-moz-placeholder-shown) + button {
+    display: block;
+  }
+  input:not(:-ms-input-placeholder) + button {
+    display: block;
+  }
+  input:not(:placeholder-shown) + button {
+    display: block;
+  }
+  
+  label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  .page-content {
+    margin: 0 auto;
+    line-height: 1.625;
+  }
